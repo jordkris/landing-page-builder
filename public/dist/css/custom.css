@@ -1,0 +1,11 @@
+.bg_general {
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+    background: linear-gradient(90deg, #BCA3C2, #EDBB99, #EDBB99, #F8F8FF);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+#password1-eye,
+#password2-eye {
+    cursor: pointer;
+}
