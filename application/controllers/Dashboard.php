@@ -8,6 +8,9 @@ class Dashboard extends CI_Controller
         parent::__construct();
         setWIB();
         $this->load->model(['m_auth', 'm_flashdata', 'm_user']);
+        if (!$this->session->userdata('user_id')) {
+			redirect('auth');
+		}
     }
 
     public function index()

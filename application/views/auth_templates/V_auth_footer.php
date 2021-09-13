@@ -26,18 +26,20 @@
 <!-- ============================================================== -->
 <!-- This page plugin js -->
 <!-- ============================================================== -->
+<script src="<?= base_url('public'); ?>/dist/js/password.js"></script>
 <script>
     $(".preloader").fadeOut();
-    let passwordIds = ['#password1', '#password2'];
-    passwordIds.forEach((passwordId) => {
-        $(passwordId+'-eye').click(() => {
-            let icon = passwordId+'-eye > span > i';
-            if ($(icon).hasClass('mdi-eye')) {
-                $(icon).removeClass('mdi-eye').addClass('mdi-eye-off');
-                $(passwordId).attr('type', 'password');
-            } else if ($(icon).hasClass('mdi-eye-off')) {
-                $(icon).removeClass('mdi-eye-off').addClass('mdi-eye');
-                $(passwordId).attr('type', 'text');
+    $('#flash-message').click(() => {
+        let url = "<?= base_url('auth/session_destroy'); ?>";
+        $.ajax({
+            url: url,
+            method: 'get',
+            success: () => {
+                console.log('Notifikasi berhasil terhapus');
+            },
+            error: (e) => {
+                console.log(url);
+                console.log(e);
             }
         });
     });

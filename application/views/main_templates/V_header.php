@@ -11,11 +11,12 @@
     <meta name="robots" content="noindex,nofollow" />
     <title><?= $title; ?></title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('public'); ?>/assets/images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('public'); ?>/assets/images/webox-logo.png" />
     <!-- Custom CSS -->
     <link href="<?= base_url('public'); ?>/assets/libs/flot/css/float-chart.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="<?= base_url('public'); ?>/dist/css/style.min.css" rel="stylesheet" />
+    <link href="<?= base_url('public'); ?>/dist/css/custom.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

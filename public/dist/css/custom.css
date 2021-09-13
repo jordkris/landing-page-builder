@@ -6,6 +6,12 @@
 }
 
 #password1-eye,
-#password2-eye {
+#password2-eye,
+#password3-eye {
     cursor: pointer;
+}
+
+#img-logo {
+    width: 100%;
+    max-height: 60px;
 }

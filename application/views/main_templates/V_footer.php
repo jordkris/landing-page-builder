@@ -41,6 +41,25 @@
 <script src="<?= base_url('public'); ?>/assets/libs/flot/jquery.flot.crosshair.js"></script>
 <script src="<?= base_url('public'); ?>/assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
 <script src="<?= base_url('public'); ?>/dist/js/pages/chart/chart-page-init.js"></script>
+
+<script src="<?= base_url('public'); ?>/dist/js/password.js"></script>
+<script>
+    $('#flash-message').click(() => {
+        let url = "<?= base_url('auth/session_destroy'); ?>";
+        $.ajax({
+            url: url,
+            method: 'get',
+            success: () => {
+                console.log('Notifikasi berhasil terhapus');
+            },
+            error: (e) => {
+                console.log(url);
+                console.log(e);
+            }
+        });
+    });
+    
+</script>
 </body>
 
 </html>

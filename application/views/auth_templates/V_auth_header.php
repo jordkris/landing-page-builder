@@ -11,7 +11,7 @@
     <meta name="robots" content="noindex,nofollow" />
     <title><?= $title; ?></title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('public'); ?>/assets/images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('public'); ?>/assets/images/webox-logo.png" />
     <!-- Custom CSS -->
     <link href="<?= base_url('public'); ?>/dist/css/style.min.css" rel="stylesheet" />
     <link href="<?= base_url('public'); ?>/dist/css/custom.css" rel="stylesheet" />

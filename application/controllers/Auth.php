@@ -122,6 +122,12 @@ class Auth extends CI_Controller
 	{
 		$this->m_auth->unset_all_sessions();
 		$this->m_flashdata->set('warning', 'Anda telah berhasil logout!');
-		redirect('auth');
+		redirect('auth','refresh');
+	}
+
+	public function session_destroy() {
+		if(isset($_SESSION['message'])){
+			unset($_SESSION['message']);
+		}
 	}
 }

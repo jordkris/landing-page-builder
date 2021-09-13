@@ -1,7 +1,8 @@
 <div class="auth-box bg-dark border-top border-secondary py-3 px-3 mx-2">
     <div>
-        <div class="text-center">
-            <span class="db"><img src="<?= base_url('public'); ?>/assets/images/logo.png" alt="logo" /></span>
+        <div class="text-center text-white">
+            <span class="db"><img id="img-logo" src="<?= base_url('public'); ?>/assets/images/webox-logo.png" alt="logo" width="25" /></span>
+            <h3>WebOX Builder</h3>
         </div>
         <?= $this->session->flashdata('message'); ?>
         <!-- Form -->
@@ -15,13 +16,16 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text bg-success text-white h-100" id="basic-addon1"><i class="mdi mdi-account fs-4"></i></span>
                         </div>
-                        <input type="text" class="form-control form-control-lg" name="username" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required="" />
+                        <input type="text" class="form-control form-control-lg" name="username" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required="" autocomplete="on" />
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text bg-warning text-white h-100" id="basic-addon2"><i class="mdi mdi-lock fs-4"></i></span>
                         </div>
-                        <input type="text" class="form-control form-control-lg" name="password" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required="" />
+                        <input type="password" id="password1" class="form-control form-control-lg" name="password" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required="" autocomplete="on" />
+                        <div id="password1-eye" class="input-group-prepend">
+                            <span class="input-group-text h-100" id="basic-addon2"><i class="mdi mdi-eye-off fs-4"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>

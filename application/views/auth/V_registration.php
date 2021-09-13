@@ -1,7 +1,7 @@
 <div class="auth-box bg-dark border-top border-secondary py-3 px-3 mx-2">
     <div>
         <div class="text-center">
-            <span class="db"><img src="<?= base_url('public'); ?>/assets/images/logo.png" alt="logo" /></span>
+            <span class="db"><img id="img-logo" src="<?= base_url('public'); ?>/assets/images/webox-logo.png" alt="logo" /></span>
         </div>
         <!-- Form -->
         <form class="form-horizontal needs-validation mt-3" method="post" action="<?= base_url('auth/registration'); ?>">

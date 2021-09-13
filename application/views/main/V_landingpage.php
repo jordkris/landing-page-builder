@@ -12,8 +12,9 @@
                 <div class="ms-auto text-end">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="<?= base_url('dashboard'); ?>">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                <?= $title; ?>
+                                Landing Page
                             </li>
                         </ol>
                     </nav>
@@ -40,17 +41,14 @@
                         echo 'Member';
                     }
                     ?>
-                    Dashboard</h6>
+                    Landing Page</h6>
             </div>
 
             <!-- Card Body -->
             <div class="row no-gutters">
                 <div class="col-md-12">
                     <div class="card-body">
-                        <p>Welcome, <?= $profile['name']; ?></p>
-                        <p>Selamat datang di dashboard admin.</p>
-                        <p>Silahkan mulai membuat Landingpage baru dengan</p>
-                        <p>klik menu <a href="<?= base_url('landingpage'); ?>">CREATE NEW LANDINGPAGE</a></p>
+                        <p>New Landing Page</p>
                     </div>
                 </div>
             </div>
