@@ -40,16 +40,11 @@
         <!-- ============================================================== -->
         <!-- Login box.scss -->
         <!-- ============================================================== -->
-        <div class="
-          auth-wrapper
-          no-block
-          justify-content-center
-          align-items-center
-        ">
+        <div class="container" style="max-width: max-content;">
             <br />
             <br />
             <br />
             <br />
             <br />
-            <div class="card bg-transparent mx-5">
+            <div class="card bg-transparent o-hidden border-0 shadow-lg mx-5">
                 <div class="card-body">

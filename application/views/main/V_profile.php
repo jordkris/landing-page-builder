@@ -47,7 +47,7 @@
             <!-- Card Body -->
             <div class="row no-gutters">
                 <div class="col-md-3">
-                    <img style="width: 100%; height: 100%;" src="<?= base_url('public/assets/images/users/') . $profile['image']; ?>" class="card-img-left">
+                    <img style="width: 100%; height: auto;" src="<?= base_url('public/assets/images/users/') . $profile['image']; ?>" class="card-img-left">
                 </div>
                 <div class="col-md-9">
                     <div class="card-body">

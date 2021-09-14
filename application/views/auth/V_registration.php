@@ -1,12 +1,12 @@
 <div class="auth-box bg-dark border-top border-secondary py-3 px-3 mx-2">
     <div>
-        <div class="text-center">
+        <div class="text-center text-white">
             <span class="db"><img id="img-logo" src="<?= base_url('public'); ?>/assets/images/webox-logo.png" alt="logo" /></span>
+            <h3>WebOX Builder</h3>
         </div>
         <!-- Form -->
         <form class="form-horizontal needs-validation mt-3" method="post" action="<?= base_url('auth/registration'); ?>">
             <div class="row">
-                <div><?php print_r($this->form_validation->error_array()); ?></div>
                 <div class="col-12">
                     <div class="input-group mb-3" >
                         <input type="hidden" class="form-control form-control-lg" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash(); ?>" />
@@ -68,7 +68,7 @@
                 <div class="col-2"></div>
                 <div class="col-8">
                     <div class="form-group">
-                        <a href="<?= base_url('auth'); ?>">
+                        <a href="<?= base_url('auth'); ?>" class="text-white">
                             <i class="mdi mdi-account-key fs-4 me-1"></i> Login
                         </a>
                     </div>

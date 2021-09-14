@@ -44,7 +44,7 @@
                 <div class="col-2"></div>
                 <div class="col-8">
                     <div class="form-group">
-                        <a href="<?= base_url('auth/registration'); ?>">
+                        <a href="<?= base_url('auth/registration'); ?>" class="text-white">
                             <i class="mdi mdi-account-plus fs-4 me-1"></i> Register New Account
                         </a>
                     </div>
