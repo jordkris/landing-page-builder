@@ -13,10 +13,15 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('public'); ?>/assets/images/webox-logo.png" />
     <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <link href="<?= base_url('public'); ?>/assets/libs/flot/css/float-chart.css" rel="stylesheet" />
     <!-- Custom CSS -->
+    <link href="<?= base_url('public'); ?>/assets/libs/jquery-steps/jquery.steps.css" rel="stylesheet" />
+    <link href="<?= base_url('public'); ?>/assets/libs/jquery-steps/steps.css" rel="stylesheet" />
+    <link href="<?= base_url('public'); ?>/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
     <link href="<?= base_url('public'); ?>/dist/css/style.min.css" rel="stylesheet" />
     <link href="<?= base_url('public'); ?>/dist/css/custom.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

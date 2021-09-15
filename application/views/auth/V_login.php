@@ -30,26 +30,22 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-2"></div>
-                <div class="col-8">
+                <div class="col-12">
                     <div class="form-group">
                         <button class="btn btn-success text-white" type="submit">
                             <i class="mdi mdi-account-key fs-4 me-1"></i> Login
                         </button>
                     </div>
                 </div>
-                <div class="col-2"></div>
             </div>
             <div class="row text-center">
-                <div class="col-2"></div>
-                <div class="col-8">
+                <div class="col-12">
                     <div class="form-group">
                         <a href="<?= base_url('auth/registration'); ?>" class="text-white">
                             <i class="mdi mdi-account-plus fs-4 me-1"></i> Register New Account
                         </a>
                     </div>
                 </div>
-                <div class="col-2"></div>
             </div>
         </form>
     </div>

@@ -26,7 +26,13 @@ class Landingpage extends CI_Controller
 
     public function new()
     {
-        redirect('landingpage/index');
+        $data['profile'] = $this->m_auth->get_session();
+        $data['title'] = 'New Landing Page';
+        $this->load->view('main_templates/V_header', $data);
+        $this->load->view('main_templates/V_topbar');
+        $this->load->view('main_templates/V_sidebar');
+        $this->load->view('main/landingpage/V_00_product_main');
+        $this->load->view('main_templates/V_footer');
     }
 
     public function list()

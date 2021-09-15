@@ -49,7 +49,20 @@
             <div class="row no-gutters">
                 <div class="col-md-12">
                     <div class="card-body">
-                        <p>List Landing Page</p>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped hover row-border compact stripe order-column display nowrap" id="landingpage-list" cellspacing="0" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Title</th>
+                                        <th>Date Creted</th>
+                                        <th>Link / URL</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

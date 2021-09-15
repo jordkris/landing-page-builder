@@ -17,6 +17,7 @@
     }
 }
 
+#product-background-color,
 #password1-eye,
 #password2-eye,
 #password3-eye {
@@ -26,4 +27,8 @@
 #img-logo {
     width: auto;
     max-height: 60px;
+}
+
+.tbl-center {
+    text-align: center;
 }

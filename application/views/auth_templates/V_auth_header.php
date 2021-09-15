@@ -46,5 +46,5 @@
             <br />
             <br />
             <br />
-            <div class="card bg-transparent o-hidden border-0 shadow-lg mx-5">
+            <div class="card bg-transparent o-hidden border-0 shadow-lg">
                 <div class="card-body">

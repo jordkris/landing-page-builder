@@ -23,8 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-// $config['base_url'] = 'http://localhost/website/landing-page-builder/';
-$config['base_url'] = 'https://demo.weboxbuilder.com/';
+
+$config['base_url'] = 'http://localhost/website/landing-page-builder/';
+// $config['base_url'] = 'https://demo.weboxbuilder.com/';
 
 
 /*
