@@ -20,7 +20,8 @@
 #product-background-color,
 #password1-eye,
 #password2-eye,
-#password3-eye {
+#password3-eye,
+.cursor-pointer {
     cursor: pointer;
 }
 

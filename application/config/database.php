@@ -73,14 +73,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+$path = __DIR__.'/../../install/config.json';
+if (file_exists($path)) {
+    $string = file_get_contents($path);
+    $data = json_decode($string, true);
+} else {
+    $data['db_host'] = '#';
+    $data['db_username'] = '';
+    $data['db_password'] = '';
+    $data['db_name'] = '';
+	header('Location: ../..');
+}
+
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
+	'hostname' => $data['db_host'],
+	'username' => $data['db_username'],
 	// 'username' => 'weboxder_userdemo',
-	'password' => '',
+	'password' => $data['db_password'],
 	// 'password' => 'p{5I~UU#ypDM',
-	'database' => 'weboxder_demo',
+	'database' => $data['db_name'],
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

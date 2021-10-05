@@ -5,6 +5,18 @@
             <h3>WebOX Builder</h3>
         </div>
         <?= $this->session->flashdata('message'); ?>
+        <!-- <?= base_url(''); ?> -->
+        <?php
+        $path = __DIR__ . '\config.json';
+        if (!file_exists($path)) {
+            // echo __DIR__;
+            // header('Location: ./install');
+        } else {
+            echo "false" . '<br />';
+            // echo __DIR__ . '<br />';
+            // echo $path . '<br />';
+        }
+        ?>
         <!-- Form -->
         <form class="form-horizontal needs-validation mt-3" method="post" action="<?= base_url('auth'); ?>">
             <div class="row">

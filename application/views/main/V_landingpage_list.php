@@ -13,7 +13,6 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="<?= base_url('dashboard'); ?>">Dashboard</a></li>
-                            <li class="breadcrumb-item"><a href="<?= base_url('landingpage'); ?>">Landing Page</a></li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 <?= $title; ?>
                             </li>
@@ -49,14 +48,23 @@
             <div class="row no-gutters">
                 <div class="col-md-12">
                     <div class="card-body">
+                        <?= $this->session->flashdata('message'); ?>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a href="<?= base_url('landingpage'); ?>"></a>
+                            </div>
+                        </div>
                         <div class="table-responsive">
                             <table class="table table-bordered table-striped hover row-border compact stripe order-column display nowrap" id="landingpage-list" cellspacing="0" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th>No</th>
+                                        <th>Status</th>
                                         <th>Title</th>
-                                        <th>Date Creted</th>
+                                        <th>Date Created</th>
+                                        <th>Created By</th>
                                         <th>Link / URL</th>
+                                        <th>Draft</th>
                                         <th>Edit</th>
                                         <th>Delete</th>
                                     </tr>

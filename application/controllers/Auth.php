@@ -130,4 +130,11 @@ class Auth extends CI_Controller
 			unset($_SESSION['message']);
 		}
 	}
+
+	public function forceLogout() {
+		$this->m_auth->unset_all_sessions();
+		$temp = $this->session->flashdata('message');
+		$this->session->set_flashdata('message', $temp);
+		redirect('auth','refresh');
+	}
 }

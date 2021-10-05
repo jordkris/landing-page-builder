@@ -1,0 +1,10 @@
+{
+    "db_name": "weboxder_demo",
+    "db_username": "root",
+    "db_password": "",
+    "db_host": "localhost",
+    "url": "http:\/\/localhost\/website\/landing-page-builder\/",
+    "admin_username": "admin",
+    "admin_password": "123",
+    "admin_email": "demo@gmail.com"
+}

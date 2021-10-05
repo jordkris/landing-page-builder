@@ -53,45 +53,41 @@
                 <div class="col-md-9">
                     <div class="card-body">
                         <?= $this->session->flashdata('message'); ?>
-                        <div class="row text-center">
-                            <div class="col-4 form-group">
-                                <a href="<?= base_url('change_image'); ?>" class="btn btn-primary text-white">
-                                    <i class="mdi mdi-image-area"></i> Edit Foto Profil
-                                </a>
-                            </div>
-                            <div class="col-4 form-group"></div>
-                            <div class="col-4 form-group">
-                                <a href="<?= base_url('profile/changepassword'); ?>" class="btn btn-primary text-white">
-                                    <i class="mdi mdi-key"></i> Edit Password
-                                </a>
-                            </div>
-                        </div>
                         <!-- Form -->
-                        <form class="form-horizontal needs-validation" method="post" action="<?= base_url('profile/edit'); ?>">
+                        <form id="form-update-user" class="form-horizontal needs-validation" method="post" action="<?= base_url('api/editUser'); ?>">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="input-group mb-3">
                                         <input type="hidden" class="form-control form-control-lg" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash(); ?>" />
                                     </div>
+                                    <label>Username</label>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text bg-success text-white h-100" id="basic-addon1"><i class="mdi mdi-account fs-4"></i></span>
                                         </div>
                                         <input type="text" class="form-control form-control-lg" name="username" value="<?= $profile['username']; ?>" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required="" autocomplete="on" />
                                     </div>
+                                    <label>Nama Lengkap</label>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text bg-warning text-white h-100" id="basic-addon2"><i class="mdi mdi-lock fs-4"></i></span>
                                         </div>
                                         <input type="text" class="form-control form-control-lg" name="name" value="<?= $profile['name']; ?>" placeholder="Nama" aria-label="Name" aria-describedby="basic-addon1" required="" autocomplete="on" />
                                     </div>
+                                    <label>Foto Profil</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text bg-info text-white h-100" id="basic-addon2"><i class="mdi mdi-image fs-4"></i></span>
+                                        </div>
+                                        <input type="file" class="form-control form-control-lg" name="userImage" aria-describedby="basic-addon1" autocomplete="on" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="row text-center">
                                 <div class="col-12 form-group">
-                                    <button class="btn btn-success text-white" type="submit">
+                                    <a id="updateUser" onclick="updateUser('<?= $profile['id']; ?>')" class="btn btn-success text-white">
                                         <i class="mdi mdi-account-edit fs-4 me-1"></i> Update
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </form>

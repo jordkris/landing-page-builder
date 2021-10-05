@@ -54,8 +54,7 @@
                     <div class="card-body">
                         <?= $this->session->flashdata('message'); ?>
                         <!-- Form -->
-                        <form class="form-horizontal needs-validation" method="post" action="<?= base_url('profile/changepassword'); ?>">
-
+                        <form id="form-update-password" class="form-horizontal needs-validation" method="post" action="<?= base_url('api/changePassword/') . $profile['id']; ?>">
                             <div class="input-group mb-3">
                                 <input type="hidden" class="form-control form-control-lg" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash(); ?>" />
                             </div>
